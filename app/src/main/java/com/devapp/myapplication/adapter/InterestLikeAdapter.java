@@ -30,7 +30,7 @@ public class InterestLikeAdapter extends RecyclerView.Adapter<InterestLikeAdapte
 
     @Override
     public InterestLikeHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View v=inflater.inflate(R.layout.list_interest,parent,false);
+        View v=inflater.inflate(R.layout.interest_like_card,parent,false);
         return new InterestLikeHolder(v);
     }
 

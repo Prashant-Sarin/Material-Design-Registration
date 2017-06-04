@@ -119,7 +119,7 @@ public class ProfilePageFragment extends Fragment implements View.OnClickListene
     }
 
     public void updateInterestLike(RecyclerView recyclerView){
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL,false));
         adapter=new InterestLikeAdapter(interestLikeModels,getContext());
         recyclerView.setAdapter(adapter);
     }

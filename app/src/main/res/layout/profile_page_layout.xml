@@ -28,8 +28,8 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:src="@drawable/ic_add_circle_black_48dp"
                 android:id="@+id/interest_add_img"
                 android:layout_below="@+id/interest"/>
@@ -37,13 +37,12 @@
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recycler_interest"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_toRightOf="@+id/interest_add_img"
-                android:layout_below="@+id/interest"/>
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/interest_add_img"/>
 
             <TextView
                 android:id="@+id/likes"
-                android:layout_below="@+id/interest_add_img"
+                android:layout_below="@+id/recycler_interest"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingTop="10dp"
@@ -51,8 +50,8 @@
                 android:textSize="20dp"
                 android:textStyle="bold" />
             <ImageView
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:id="@+id/likes_add_img"
                 android:src="@drawable/ic_add_circle_black_48dp"
                 android:layout_below="@+id/likes"/>
@@ -60,16 +59,15 @@
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recycler_likes"
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:layout_toRightOf="@+id/likes_add_img"
-                android:layout_below="@+id/likes"/>
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/likes_add_img"/>
 
 
             <TextView
                 android:id="@+id/sample_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/likes_add_img"
+                android:layout_below="@+id/recycler_likes"
                 android:padding="10dp"
                 android:text="In our example, we replace the fragment that is in use, with the one that the user “chooses” by pressing the appropriate button. Notice that the containerViewId of replace method, is the unique id of the element in the activity_main layout.
             In our example, we replace the fragment that is in use, with the one that the user “chooses” by pressing the appropriate button. Notice that the containerViewId of replace method, is the unique id of the element in the activity_main layout.
